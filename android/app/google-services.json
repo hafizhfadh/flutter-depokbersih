@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457029453256",
+    "project_id": "depokbersih-48807",
+    "storage_bucket": "depokbersih-48807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457029453256:android:fd48feeed8038f4c656cfd",
+        "android_client_info": {
+          "package_name": "com.depokbersih.app.depokbersih"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457029453256-gnt57bhs489nrq6mn5pbpepejk0a16sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Eb3sqJSf6mCki2HnwQveubg48DGS6cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457029453256-gnt57bhs489nrq6mn5pbpepejk0a16sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
