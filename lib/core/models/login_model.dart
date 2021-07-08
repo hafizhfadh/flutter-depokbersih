@@ -1,6 +1,6 @@
-class LoginModel {
+class AuthModel {
   final String email;
   final String password;
 
-  LoginModel(this.email, this.password);
+  AuthModel(this.email, this.password);
 }
