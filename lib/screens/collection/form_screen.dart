@@ -16,6 +16,7 @@ class _FormScreenState extends State<FormScreen> {
 
   TrashType val = TrashType.organic;
   TextEditingController _weightController = TextEditingController();
+  SnackBar? snackBar;
 
   Future<void> _save() async {
     CollectionReference trash = FirebaseFirestore.instance.collection('trash');
@@ -24,10 +25,14 @@ class _FormScreenState extends State<FormScreen> {
         'uid': widget.userCredential!.uid, // John Doe
         'weight': _weightController.text, // Stokes and Sons
         'type': val == TrashType.organic ? "Organic" : "Inorganic" // 42
-      }).then((value) => print("User Added"))
+      }).then((value) {
+        snackBar = SnackBar(content: Text('Data berhasil disimpan.'));
+      })
           .catchError((error) => print("Failed to add user: $error"));
     } catch(e) {
       print(e);
+    } finally {
+      ScaffoldMessenger.of(context).showSnackBar(snackBar!);
     }
 
 
